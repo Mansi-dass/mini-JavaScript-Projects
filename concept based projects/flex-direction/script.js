@@ -1,8 +1,6 @@
 const selectEl = document.querySelector("#select-el")
 const container = document.querySelector(".container")
 const items = document.querySelectorAll(".items")
-// const items = document.querySelector(".items")
-// const items = document.getElementsByClassName("items")
 
 console.log(items)
 let flexDir = ""
@@ -20,8 +18,6 @@ selectEl.addEventListener("change", function () {
         container.style.flexDirection = flexDir
     } else {
         container.style.height = "75vh"
-        // container.style.alignItems = "none"
-        // container.style.alignItems = 'null'
         container.style.removeProperty("align-items")
         
         for (let i = 0; i < items.length; i++) {
