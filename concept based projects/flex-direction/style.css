@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    color: #674188;
+    background-color: #FFFBF5;
+    padding: 0px 100px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    padding: 10px 20px;
+    font-size: 3rem;
+}
+
+fieldset{
+    padding: 10px 10px 0px 10px;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+}
+
+fieldset select{
+    font-size: 0.9rem;
+    margin: 0px 0px 1px 10px;
+    background-color: #FFFBF5;
+}
+
+.container{
+    height: 21.0vh;
+    display: flex;
+    padding: 0rem 0.7rem;
+    margin: 15px 12px 15px 12px;
+    background: linear-gradient(to left bottom,#F7EFE5, #C3ACD0 );
+}
+.items{
+    position: relative;
+    width: 14vh;
+    height: 14vh;
+    margin: 1.25rem;
+    border-radius: 4px;
+    background-color: #F7EFE5;
+    color: #674188;
+    padding: 3px;
+}
