@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #674188;
+    background-color: #FFFBF5;
+    padding: 0px 5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+legend{
+    font-size: 1.2rem;
+}
+
+fieldset {
+    padding: 10px 10px 15px 10px;
+    margin: 10px 10px;
+    font-size: 1.2rem;
+}
+
+fieldset select {
+    font-size: 0.9rem;
+    margin: 0px 0px 1px 10px;
+    background-color: #FFFBF5;
+    color: #674188;
+}
+
+option:checked {
+    background-color: #F7EFE5;
+}
+
+.jc-container,
+.ji-container,
+.js-container {
+    position: relative;
+    height: 19vh;
+    padding: 0.7rem 0.7rem;
+    margin: 15px 12px 15px 12px;
+    background: linear-gradient(to bottom, #F7EFE5, #C3ACD0);
+}
+
+.jc-container {
+    display: flex;
+}
+
+.ji-container, .js-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.items {
+    position: relative;
+    background: linear-gradient(to top right, #F7EFE5, #C3ACD0);
+    font-size: 2vw;
+}
+
+.jc-container .items {
+    width: 7vw;
+    height: 7vw;
+    padding: 3px;
+}
+
+.ji-container .items,.js-container .items {
+    padding: 6px;
+    text-align: center;
+}
+
+.fixed {
+    position: absolute;
+    right: 8.5rem;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    right: 0px;
+    bottom: 0px;
+}

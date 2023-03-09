@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-*</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Choose Justify-Content:</legend>
+        <select name="flex-dir" id="select-el-jc">
+            <option value="center">center</option>
+            <option value="start" selected>start</option>
+            <option value="end">end</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+            <option value="stretch">stretch</option>
+        </select>
+        <div class="jc-container">
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <h3 class="fixed">display: flex;</h3>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose Justify-items:</legend>
+        <select name="flex-dir" id="select-el-ji">
+            <option value="normal" selected>normal</option>
+            <option value="stretch">stretch</option>
+            <option value="center">center</option>
+            <option value="start" >start</option>
+            <option value="end">end</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="self-start">self-start</option>
+            <option value="self-end">self-end</option>
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="baseline">baseline</option>
+            <option value="first baseline">first baseline</option>
+            <option value="last baseline">last baseline</option>
+        </select>
+        <div class="ji-container">
+            <div class="items">-one-</div>
+            <div class="items">--two--</div>
+            <div class="items">---three---</div>
+            <div class="items">----four----</div>
+            <div class="items">-----five-----</div>
+            <h3 class="fixed">display: grid;</h3>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Choose Justify-self: (applied only to 1st child)</legend>
+        <select name="flex-dir" id="select-el-js">
+            <option value="auto" selected>auto</option>
+            <option value="normal">normal</option>
+            <option value="stretch">stretch</option>
+            <option value="center">center</option>
+            <option value="start" >start</option>
+            <option value="end">end</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="self-start">self-start</option>
+            <option value="self-end">self-end</option>
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="baseline">baseline</option>
+            <option value="first baseline">first baseline</option>
+            <option value="last baseline">last baseline</option>
+            <option value="safe center">safe center</option>
+            <option value="unsafe center">unsafe center</option>
+        </select>
+        <div class="js-container">
+            <div class="items">-one-</div>
+            <div class="items">--two--</div>
+            <div class="items">---three---</div>
+            <div class="items">----four----</div>
+            <div class="items">-----five-----</div>
+            <h3 class="fixed">display: grid;</h3>
+        </div>
+    </fieldset>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
