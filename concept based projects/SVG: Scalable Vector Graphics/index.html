@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG: Scalable Vector Graphics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex-col-center ">
+        <p>A PlayGround for SVG and its Basic Shape Elements</p>
+        <div class="flex-row">
+            <div class="details-container boxes">
+                <div class="details-wrapper flex-col-center">
+
+                    <div class="row">
+                        <div class="flex-col-align-start ">
+                            <label for="width">Width:</label>
+                            <input type="text" id="svg-width">
+                        </div>
+
+                        <div class="flex-col-align-start">
+                            <label for="height">Height:</label>
+                            <input type="text" id="svg-height">
+                        </div>
+                    </div>
+
+                    <div class="flex-row select-wrapper">
+                        <label for="SVG-shape">SVG Shape Element:</label>
+                        <select name="svg-shape" id="shape-input-el">
+                            <option value="select" selected>--select--</option>
+                            <option value="circle">circle</option>
+                            <option value="ellipse">ellipse</option>
+                            <option value="rect">rect</option>
+                            <option value="line">line</option>
+                            <option value="polyline">polyline</option>
+                            <option value="polygon">polygon</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="shape-details flex-col-align-start">
+                </div>
+
+            </div>
+            <div class="svg-container boxes">
+                <input type="color" id="color-picker" value="#635F77">
+                <div class="inner-box">
+                    <svg id="svg-el" viewBox="0 0 488 450">
+
+                    </svg>
+                </div>
+                <p>488x450</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
