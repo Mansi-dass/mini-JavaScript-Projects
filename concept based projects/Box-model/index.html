@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset class="flex-center-gap">
+        <legend><span class="color-rep" id="content"></span>Content:</legend>
+        <label for="width">Width:
+            <input type="text" name="content" id="width" value="200">
+        </label>
+        <label for="height">Height:
+            <input type="text" name="content" id="height" value="100">
+        </label>
+    </fieldset>
+
+    <fieldset class="flex-around">
+        <legend><span class="color-rep" id="padding"></span>Padding:</legend>
+        <label for="top">Padding-top:
+            <input type="text" name="padding" id="ptop" value="10">
+        </label>
+        <label for="right">Padding-right:
+            <input type="text" name="padding" id="pright" value="10">
+        </label>
+        <label for="bottom">Padding-bottom:
+            <input type="text" name="padding" id="pbottom" value="10">
+        </label>
+        <label for="left">Padding-left:
+            <input type="text" name="padding" id="pleft" value="10">
+        </label>
+    </fieldset>
+
+    <fieldset class="flex-around">
+        <legend><span class="color-rep" id="border"></span>Border:</legend>
+        <label for="top">Border-top: 
+            <input type="text" name="border" id="btop" value="5">
+        </label>
+        <label for="right">Border-right: 
+            <input type="text" name="border" id="bright" value="5">
+        </label>
+        <label for="bottom">Border-bottom: 
+            <input type="text" name="border" id="bbottom" value="5">
+        </label>
+        <label for="left">Border-left: 
+            <input type="text" name="border" id="bleft" value="5">
+        </label>
+    </fieldset>
+
+    <fieldset class="flex-around">
+        <legend><span class="color-rep" id="margin"></span>Margin:</legend>
+        <label for="top">Margin-top:
+            <input type="text" name="margin" id="mtop" value="20">
+        </label>
+        <label for="right">Margin-right:
+            <input type="text" name="margin" id="mright" value="20">
+        </label>
+        <label for="bottom">Margin-bottom:
+            <input type="text" name="margin" id="mbottom" value="20">
+        </label>
+        <label for="left">Margin-left:
+            <input type="text" name="margin" id="mleft" value="20">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Box-Model:</legend>
+        <div class="container flex-center">
+            <div class="margin flex-center">
+                <div class="border flex-center">
+                    <div class="padding flex-center">
+                        <div class="content flex-center">Content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+:root {
+    --dark-color: #454545;
+    --bright-color: #FF6000;
+    --muted-bright-color: #FFA559;
+    --complimentary-light-color: #FFE6C7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f9e7d2;
+}
+
+/* Box layer */
+.content {
+    background-color: var(--muted-bright-color);
+}
+
+.padding {
+    background-color: var(--complimentary-light-color);
+}
+
+.margin {
+    background-color: var(--dark-color);
+}
+
+.border {
+    background-color: var(--bright-color);
+}
+
+/* style for texts and input field*/
+fieldset {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+}
+
+label {
+    color: var(--dark-color);
+}
+
+input {
+    padding: 5px 2px;
+    max-width: 20vw;
+    border-radius: 4px;
+    color: var(--dark-color);
+    background-color: var(--muted-bright-color);
+    border: 1px solid var(--muted-bright-color)
+}
+
+/* color representators */
+.color-rep {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--dark-color);
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 4px 0px 1px;
+}
+
+/* color representators for each layer */
+#content {
+    background-color: var(--muted-bright-color);
+}
+
+#padding {
+    background-color: var(--complimentary-light-color);
+}
+
+#border {
+    background-color: var(--bright-color);
+}
+
+#margin {
+    background-color: var(--dark-color);
+}
+
+/* utility classes */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-gap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 20vw;
+}
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
